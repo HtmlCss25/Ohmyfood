@@ -1,0 +1,26 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.bottom-footer{
+    background-color: $secondary-text-color;
+    padding: 1.56rem;
+    &__logo{
+        width: 8.6875rem;
+        height: 1.6875rem; 
+        margin-bottom: 1rem;
+    }
+    &__list{
+        @include flex(column,none,flex-start);
+        gap: 0.4375rem; 
+        margin-bottom: 0.4375rem;
+    }
+    &__link{
+        color: #fff;
+        &--weighted{
+            @extend .bottom-footer__link;
+        }
+        &__logo{
+            margin-right: 0.6rem;
+        }
+    }
+}

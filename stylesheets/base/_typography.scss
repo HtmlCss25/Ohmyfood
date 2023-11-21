@@ -1,0 +1,54 @@
+@import '../utilities/variables';
+
+body{
+    font-family: $para-font;
+    color: #000;
+}
+
+//section titles
+.home{
+
+    h1, h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    h3, &-header__subtitle {
+        font-size: 1.125rem;
+    }
+    h3{
+        font-weight: 700;
+    }
+    &-header__subtitle{
+        font-weight: 300;
+    }
+    &-header__subtitle{
+        color: $secondary-text-color;
+    }
+    .restaurant-card__subtitle{
+        font-size: 1.0625rem;
+        font-weight: 300;
+    }
+    .restaurant-card__badge{
+        color: $new-badge-text-color;
+        text-align: center;
+        font-size: 0.875rem; 
+        font-weight: 500; 
+    }
+    .guide-section__badge{
+        color: white;
+        text-align: center;
+        font-size: 0.88638rem; 
+        font-weight: 500;
+    }
+}
+
+.bottom-footer{
+
+    &__link{
+        color:  black;
+        &--weighted{
+            font-weight: 500;
+        }
+    }
+
+}
