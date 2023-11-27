@@ -98,30 +98,6 @@
         position: absolute;
         right: 1.2rem;
         bottom: 2rem ;
-        font-size: 1.5rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        &--unfilled{
-            position: absolute;
-            left: 0;
-            transition: opacity 0.1s;
-        }
-        &--filled{
-            position: absolute;
-            left: 0;
-            fill:url('#gradient');
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-        &:hover{
-            .restaurant-card__icon--unfilled{
-                opacity: 0;
-            }
-            .restaurant-card__icon--filled{
-                opacity: 1;
-            }
-        }
-        
     }
     &__title{
         padding-bottom: 0.4rem;

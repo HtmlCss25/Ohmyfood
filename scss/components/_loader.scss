@@ -53,6 +53,7 @@ body{
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
     animation: destroyLoader 3s forwards;
+    z-index: 9;
     &__bar{
         width: 60vw;
         height: 1rem;

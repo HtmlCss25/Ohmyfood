@@ -46,6 +46,32 @@ body{
     }
 }
 
+.menu-page{
+    h1{
+        color:  #101010;
+        font-family: $title-font;
+        font-size: 1.75rem;
+    }
+    h2,
+    .menu-part-card__subtitle{
+        font-weight: 300;
+    }
+    h2{
+        text-transform: uppercase; 
+    }
+    h3{
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+    .menu-part-card__subtitle{
+        font-size: 0.94019rem;
+        
+        &--weighted{
+            font-weight: 700; 
+        }
+    }
+}
+
 .bottom-footer{
 
     &__link{
