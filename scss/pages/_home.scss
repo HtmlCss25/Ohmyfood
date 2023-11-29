@@ -35,7 +35,7 @@
 
 .guide-section{
     padding: 3rem 1.25rem;
-    @include flex(column, space-evenly,center);
+    @include flex(column, normal,center);
     gap: 1.56rem;
     &__step-card{
         @include flex(row,center,flex-start);

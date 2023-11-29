@@ -82,12 +82,17 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
 }
-.home .guide-section__badge,
-.home .loader__bar .text {
+
+.guide-section__badge,
+.loader__bar .text {
   color: white;
   text-align: center;
   font-size: 0.88638rem;
   font-weight: 500;
+}
+
+.loader__bar .text {
+  letter-spacing: 0.2rem;
 }
 
 .menu-page h1 {
@@ -145,7 +150,7 @@ body {
 .bottom-footer__list {
   display: flex;
   flex-direction: column;
-  align-items: none;
+  align-items: normal;
   justify-content: flex-start;
   gap: 0.4375rem;
   margin-bottom: 0.4375rem;
@@ -199,7 +204,7 @@ body {
   padding: 3rem 1.25rem;
   display: flex;
   flex-direction: column;
-  align-items: space-evenly;
+  align-items: normal;
   justify-content: center;
   gap: 1.56rem;
 }
@@ -483,7 +488,7 @@ body {
 }
 .loader__bar {
   width: 60vw;
-  height: 1rem;
+  height: 1.5rem;
   border: 2px solid #ff13be;
   position: absolute;
   top: 50%;

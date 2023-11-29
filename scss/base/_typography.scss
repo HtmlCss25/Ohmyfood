@@ -37,6 +37,7 @@ body{
         font-size: 0.875rem; 
         font-weight: 500; 
     }
+}
     .guide-section__badge,
     .loader__bar .text{
         color: white;
@@ -44,7 +45,9 @@ body{
         font-size: 0.88638rem; 
         font-weight: 500;
     }
-}
+    .loader__bar .text{
+        letter-spacing: 0.2rem;
+    }
 
 .menu-page{
     h1{
