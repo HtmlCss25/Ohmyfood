@@ -4,10 +4,11 @@
 .bottom-footer{
     background-color: $secondary-text-color;
     padding: 1.56rem;
+    @include flex(column,normal,normal);
+    gap: 1rem;
     &__logo{
         width: 8.6875rem;
         height: 1.6875rem; 
-        margin-bottom: 1rem;
     }
     &__list{
         @include flex(column,normal,flex-start);

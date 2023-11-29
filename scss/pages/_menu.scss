@@ -62,15 +62,27 @@
     display: flex;
     overflow: hidden;
     &__title{
-        margin-bottom: 0.31rem
+        margin-bottom: 0.31rem;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__subtitle{
-        @include flex(row,center,space-between);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__subtitle--weighted{
+        margin-top: 2.55rem;
+        margin-right: 0.84rem;
+        margin-left: auto;
+        width: 2rem;
     }
     &-content{
-        width: 100%;
         padding: 0.94rem;
-        transition: width 0.5s;
+        flex: 1;
+        overflow: hidden;
     }
     .checked{
         width: 0;
@@ -80,7 +92,9 @@
         &__icon{
             color: #fff;
             opacity: 0;
-            transition: opacity 0.5s;
+            transition: opacity 0.5s,transform 0.5s;
+            font-size: 1.2rem;
+            transform: rotate(-180deg);
         }
     }
     &:hover{
@@ -89,6 +103,7 @@
             width: 3.6875rem; 
             &__icon{
                 opacity: 1;
+                transform: rotate(-360deg);
             }
         }
     }

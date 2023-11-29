@@ -365,17 +365,26 @@ body {
 }
 .menu-part-card__title {
   margin-bottom: 0.31rem;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-part-card__subtitle {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu-part-card__subtitle--weighted {
+  margin-top: 2.55rem;
+  margin-right: 0.84rem;
+  margin-left: auto;
+  width: 2rem;
 }
 .menu-part-card-content {
-  width: 100%;
   padding: 0.94rem;
-  transition: width 0.5s;
+  flex: 1;
+  overflow: hidden;
 }
 .menu-part-card .checked {
   width: 0;
@@ -389,13 +398,16 @@ body {
 .menu-part-card .checked__icon {
   color: #fff;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  font-size: 1.2rem;
+  transform: rotate(-180deg);
 }
 .menu-part-card:hover .checked {
   width: 3.6875rem;
 }
 .menu-part-card:hover .checked__icon {
   opacity: 1;
+  transform: rotate(-360deg);
 }
 
 .btn {
@@ -476,7 +488,7 @@ body {
     overflow: revert;
   }
 }
-body {
+.home {
   animation: forbidScroll 3s forwards;
 }
 
@@ -515,4 +527,99 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 760px) {
+  .guide-section {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .guide-section h2 {
+    width: 100%;
+  }
+  .guide-section__step-card {
+    width: 20%;
+  }
+  .restaurant-section {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .restaurant-section h2 {
+    width: 100%;
+  }
+  .restaurant-section__link {
+    width: 40%;
+  }
+  .bottom-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 5rem;
+  }
+  .bottom-footer__list {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .top-header {
+    height: 4rem;
+  }
+  .top-header__arrow-link {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .guide-section {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .grey-bcg {
+    width: 100%;
+    background-color: #F6F6F6;
+  }
+  .restaurant-section {
+    max-width: 1080px;
+    margin: auto;
+    justify-content: space-between;
+    gap: 3.12rem;
+  }
+  .restaurant-section__link {
+    width: 45%;
+  }
+  .menu-page__header {
+    height: 30rem;
+    margin-bottom: -2.5rem;
+  }
+  .menu-page__header .image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .menu-section {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .menu-section h1 {
+    margin: auto;
+  }
+  .menu-section__icon {
+    right: 33%;
+  }
+  .bottom-footer {
+    gap: 3rem;
+  }
+  .bottom-footer__list {
+    gap: 1.5rem;
+  }
+  .bottom-footer__logo {
+    position: relative;
+    top: -0.4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
