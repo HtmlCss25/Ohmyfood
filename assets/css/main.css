@@ -141,11 +141,15 @@ body {
 .bottom-footer {
   background-color: #353535;
   padding: 1.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  gap: 1rem;
 }
 .bottom-footer__logo {
   width: 8.6875rem;
   height: 1.6875rem;
-  margin-bottom: 1rem;
 }
 .bottom-footer__list {
   display: flex;
